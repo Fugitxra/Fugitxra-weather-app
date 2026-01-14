@@ -1,4 +1,3 @@
-complete_weather_app = '''
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,7 +120,7 @@ complete_weather_app = '''
     </div>
     
     <script>
-        const API_KEY = 'd04bd74c7783a938e15d2f350bbc557f';  // New key ✅
+        const API_KEY = 'd04bd74c7783a938e15d2f350bbc557f';
         
         const cityInput = document.getElementById('cityInput');
         const searchBtn = document.getElementById('searchBtn');
@@ -220,6 +219,7 @@ complete_weather_app = '''
                 `;
                 forecastEl.appendChild(dayCard);
             }
+            forecastEl.classList.add('show');
         }
         
         function getWeatherIcon(iconCode) {
@@ -235,10 +235,4 @@ complete_weather_app = '''
     </script>
 </body>
 </html>
-'''
 
-print(complete_weather_app)
-print("\n=== YOUR NEW API KEY IS ALREADY IN THE CODE ===")
-print("1. weather-app repo → Edit index.html → Replace ALL")
-print("2. Commit → Live instantly!")
-print("3. Test: 'London' → Enter → Weather loads!")
